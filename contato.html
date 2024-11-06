@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contato - Capim Limão Nutrição</title>
+    <style>
+        /* Estilo do formulário */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="LOGO BRANCO 1.png" alt="Logo da Capim Limão" class="logo">
+        <h1>Capim Limão Nutrição</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="experiencias.html">Experiências</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="nossa-historia.html">Nossa História</a></li>
+
+                
+
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Entre em Contato Conosco</h2>
+        <form>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="Telefone">Telefone:</label>
+                <input type="tel" id="Telefone" name="Telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>© 2024 Capim Limão Nutrição. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

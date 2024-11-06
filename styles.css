@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #4f9636;
+}
+
+header {
+    background-color: #9cd36d; /* Verde claro */
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    color: #4f9636; /* Verde escuro */
+    margin: 10px 0;
+    
+}
+
+.logo {
+    max-width: 160px; /* Ajuste o tamanho conforme necessário */
+    margin-left: 30px; /* Aumente esse valor para mover a imagem mais para a direita */
+    float: left;
+    margin-right: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #006400; /* Verde escuro */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #9ddf9c; /* Verde claro */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para a imagem da experiência */
+.imagem-experiencia {
+    display: inline-block; /* Para alinhar ao lado do texto */
+    margin: 20px 20px 20px 0; /* Margem padrão (topo, direita, baixo, esquerda) */
+    margin-left: 5px; /* Aumente esse valor para mover a imagem mais para a direita */
+    max-width: 100%; /* Ajuste a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    'transform: rotate(-5deg); /* Inclinação de 5 graus no sentido anti-horário */
+    'filter: brightness(1.0) contrast(1.2); /* Aumenta o brilho e o contraste para melhorar a aparência */
+    'transition: transform 0.3s ease; /* Adiciona uma transição suave ao aplicar transformações */
+}
+
+/* Efeito de hover para aumentar a qualidade visual */
+.imagem-experiencia:hover {
+    'transform: rotate(-5deg) scale(1.07); /* Mantém a rotação e aumenta um pouco a escala */
+}
+
+.espaco-texto {
+    margin-top: 50px; /* Ajuste o valor conforme necessário para o espaço desejado */
+}
+
+.imagem-inicio {
+    max-width: 100%; /* Ajusta a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-top: 10px; /* Adiciona um espaço acima da imagem */
+}
+
+.texto-centralizado {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%; /* Ajuste conforme necessário */
+    line-height: 1.6; /* Para melhorar a legibilidade */
+}
+
+.lista-centralizada {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%; /* Ajuste conforme necessário */
+    list-style-position: inside; /* Garante que as listas fiquem alinhadas ao centro */
+    line-height: 1.6;
+}
+main {
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+.centralizado {
+    text-align: center;
+    margin: 20px 0; /* Adiciona espaço acima e abaixo do texto */
+}
+.imagem-historia {
+    display: block; /* Faz a imagem ser um bloco */
+    margin: 20px auto; /* Margem automática para centralizar */
+    max-width: 100%; /* Para que a imagem não ultrapasse a largura da página */
+    height: auto; /* Manter a proporção da imagem */
+}
+.imagem-servicos {
+    display: block; /* Faz a imagem ser um bloco */
+    margin: 20px auto; /* Margem automática para centralizar */
+    max-width: 100%; /* Para que a imagem não ultrapasse a largura da página */
+    height: auto; /* Manter a proporção da imagem */
+}
+
+
+
