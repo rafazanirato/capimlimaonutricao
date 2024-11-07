@@ -6,32 +6,89 @@
     <link rel="stylesheet" href="styles.css">
     <title>Contato - Capim Limão Nutrição</title>
     <style>
-        /* Estilo do formulário */
-        .form-group {
-            margin-bottom: 15px;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #4f9636;
         }
 
-        input, textarea {
+        header {
+            background-color: #9cd36d; /* Verde claro */
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #4f9636; /* Verde escuro */
+            margin: 10px 0;
+        }
+
+        .logo {
+            max-width: 160px; /* Ajuste o tamanho conforme necessário */
+            margin-left: 30px; /* Aumente esse valor para mover a imagem mais para a direita */
+            float: left;
+            margin-right: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #006400; /* Verde escuro */
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.8;
+        }
+
+        footer {
+            background-color: #9ddf9c; /* Verde claro */
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
             width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
         }
 
-        button {
-            background-color: #4CAF50;
+        .whatsapp-button {
+            display: inline-block;
+            background-color: #25D366;
             color: white;
-            padding: 10px 20px;
-            border: none;
+            padding: 15px 25px;
+            text-decoration: none;
             border-radius: 5px;
-            cursor: pointer;
             font-size: 16px;
+            margin-top: 20px;
         }
 
-        button:hover {
-            background-color: #45a049;
+        .whatsapp-button:hover {
+            background-color: #128C7E;
+        }
+
+        .texto-centralizado {
+            text-align: center;
+            margin: 20px auto;
+            width: 80%; /* Ajuste conforme necessário */
+            line-height: 1.6; /* Para melhorar a legibilidade */
+        }
+
+        .centralizado {
+            text-align: center;
+            margin: 20px 0; /* Adiciona espaço acima e abaixo do texto */
         }
     </style>
 </head>
@@ -46,34 +103,20 @@
                 <li><a href="contato.html">Contato</a></li>
                 <li><a href="serviços.html">Serviços</a></li>
                 <li><a href="nossa-historia.html">Nossa História</a></li>
-
-                
-
             </ul>
         </nav>
     </header>
     
     <main>
-        <h2>Entre em Contato Conosco</h2>
-        <form>
-            <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-            </div>
-            <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="Telefone">Telefone:</label>
-                <input type="tel" id="Telefone" name="Telefone" required>
-            </div>
-            <div class="form-group">
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
+        <h2 class="texto-centralizado">Entre em Contato Conosco</h2>
+        <p class="texto-centralizado">Se você tiver qualquer dúvida ou interesse em nossos serviços, entre em contato conosco pelo WhatsApp! Clique no botão abaixo para enviar uma mensagem diretamente para a Capim Limão Nutrição.</p>
+        
+        <!-- Botão de contato via WhatsApp -->
+        <div style="text-align: center;">
+            <a href="https://wa.me/551197691687?text=Olá,%20tenho%20interesse%20nos%20serviços%20da%20Capim%20Limão%20Nutrição!" class="whatsapp-button">
+                Enviar Mensagem pelo WhatsApp
+            </a>
+        </div>
     </main>
     
     <footer>
