@@ -13,7 +13,6 @@ header {
 header h1 {
     color: #4f9636; /* Verde escuro */
     margin: 10px 0;
-    
 }
 
 .logo {
@@ -44,6 +43,8 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
+    text-align: justify;
+    line-height: 1.8;
 }
 
 footer {
@@ -62,14 +63,14 @@ footer {
     margin-left: 5px; /* Aumente esse valor para mover a imagem mais para a direita */
     max-width: 100%; /* Ajuste a largura máxima da imagem */
     height: auto; /* Mantém a proporção da imagem */
-    'transform: rotate(-5deg); /* Inclinação de 5 graus no sentido anti-horário */
-    'filter: brightness(1.0) contrast(1.2); /* Aumenta o brilho e o contraste para melhorar a aparência */
-    'transition: transform 0.3s ease; /* Adiciona uma transição suave ao aplicar transformações */
+    transform: rotate(-5deg); /* Inclinação de 5 graus no sentido anti-horário */
+    filter: brightness(1.0) contrast(1.2); /* Aumenta o brilho e o contraste para melhorar a aparência */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave ao aplicar transformações */
 }
 
 /* Efeito de hover para aumentar a qualidade visual */
 .imagem-experiencia:hover {
-    'transform: rotate(-5deg) scale(1.07); /* Mantém a rotação e aumenta um pouco a escala */
+    transform: rotate(-5deg) scale(1.07); /* Mantém a rotação e aumenta um pouco a escala */
 }
 
 .espaco-texto {
@@ -96,22 +97,19 @@ footer {
     list-style-position: inside; /* Garante que as listas fiquem alinhadas ao centro */
     line-height: 1.6;
 }
-main {
-    padding: 20px;
-    text-align: justify;
-    line-height: 1.8;
-}
 
 .centralizado {
     text-align: center;
     margin: 20px 0; /* Adiciona espaço acima e abaixo do texto */
 }
+
 .imagem-historia {
     display: block; /* Faz a imagem ser um bloco */
     margin: 20px auto; /* Margem automática para centralizar */
     max-width: 100%; /* Para que a imagem não ultrapasse a largura da página */
     height: auto; /* Manter a proporção da imagem */
 }
+
 .imagem-servicos {
     display: block; /* Faz a imagem ser um bloco */
     margin: 20px auto; /* Margem automática para centralizar */
@@ -119,5 +117,193 @@ main {
     height: auto; /* Manter a proporção da imagem */
 }
 
+/* Estilos para a página de contato */
+.contact-form {
+    background-color: #ffffff; /* Cor de fundo branca */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 30px auto; /* Centraliza o formulário na página */
+}
 
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4f9636; /* Cor do texto do label (verde escuro) */
+}
 
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #4f9636; /* Cor do texto (verde escuro) */
+}
+
+.contact-form input[type="submit"] {
+    background-color: #9cd36d; /* Verde claro */
+    color: #4f9636; /* Texto verde escuro */
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #7bbf76; /* Tom um pouco mais escuro de verde claro */
+}
+
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366; /* Cor do WhatsApp */
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    width: auto;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E; /* Tom mais escuro para o hover */
+}
+
+.whatsapp-button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.thank-you-message {
+    text-align: center;
+    font-size: 18px;
+    color: #4f9636; /* Cor do texto (verde escuro) */
+    margin-top: 30px;
+}
+/* 1. Tornando o site responsivo */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* Tamanho de fonte maior em telas pequenas */
+    }
+
+    .logo {
+        max-width: 120px; /* Ajusta o tamanho da logo para telas menores */
+        margin-left: 10px;
+    }
+
+    nav ul {
+        padding: 0;
+        text-align: center; /* Centraliza os itens de navegação em telas pequenas */
+    }
+
+    nav ul li {
+        display: block; /* Alinha os links de navegação verticalmente */
+        margin-bottom: 10px;
+    }
+
+    .whatsapp-button {
+        font-size: 18px; /* Aumenta o tamanho da fonte do botão para facilitar o clique */
+        padding: 10px 20px;
+    }
+
+    main {
+        padding: 10px; /* Diminui o padding para telas menores */
+    }
+}
+
+/* 2. Estilo do Menu Hamburguer (para telas pequenas) */
+.menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-toggle {
+    display: block;
+    background-color: #9cd36d;
+    border: none;
+    padding: 10px;
+}
+
+.menu-toggle .menu-icon {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    margin: 5px auto;
+}
+
+/* Exibindo o menu ao ativá-lo */
+.menu.active {
+    display: block;
+}
+
+/* Media query para telas pequenas */
+@media (max-width: 600px) {
+    nav ul {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+/* 3. Tamanho de fonte legível para dispositivos móveis */
+body {
+    font-size: 1rem; /* Usar rem para tamanho de fonte flexível */
+}
+
+h1 {
+    font-size: 2rem; /* Cabeçalhos maiores */
+}
+
+/* 4. Ajuste no espaçamento e margens */
+body {
+    padding: 15px;
+}
+
+main {
+    margin-top: 20px;
+}
+
+footer {
+    padding: 15px;
+}
+
+/* 5. Botões grandes e área clicável */
+button, .whatsapp-button {
+    padding: 15px 30px; /* Botões maiores */
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #9cd36d;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover, .whatsapp-button:hover {
+    background-color: #7ab96e;
+}
+
+/* 6. Tornando as imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 7. Certificando que o layout se ajusta bem ao dispositivo */
+meta[name="viewport"] {
+    width: device-width;
+    initial-scale: 1.0;
+}
